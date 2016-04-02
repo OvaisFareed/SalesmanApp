@@ -4,7 +4,7 @@ angular.module('starter', ['ionic'])
     
     $stateProvider
       .state("login", {
-        url : "/login",
+        url : "/",
         templateUrl : "/adminPortal/templates/login.html",
         controller  : "loginCtrl" 
       })
@@ -14,18 +14,18 @@ angular.module('starter', ['ionic'])
         controller  : "signupCtrl" 
       })
       .state("home", {
-        url : "/",
+        url : "/home",
         templateUrl : "/adminPortal/templates/home.html",
         controller  : "homeCtrl",
         loginCompulsory : true
       })
         .state("home.new", {
-        url : "",
+        url : "/new-company",
         templateUrl : "/adminPortal/templates/new-company.html",
         controller  : "new-companyCtrl"
       })
         .state("home.view", {
-        url : "",
+        url : "/view-company",
         templateUrl : "/adminPortal/templates/view-company.html",
         controller  : "view-companyCtrl"
       });
